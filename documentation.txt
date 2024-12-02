@@ -63,7 +63,7 @@ Step 03: ---- Inserting Data ------
     SELECT * FROM student;
 
 
-Step 04: ---- SQL DATATYPES (most use)------
+Step 04: ---- SQL DATATYPES (most popular)------
 
     -> They define the "type of value" that can be stored in a column.
 
@@ -72,6 +72,21 @@ Step 04: ---- SQL DATATYPES (most use)------
     1. CHAR    -->  string(0-255), can store characters of fixed length      --->   CHAR(50)
     2. VARCHAR -->  string(0-255), can store characters up to given length   --->   VARCHAR(50)
     3. BLOB    -->  string(0-65535), can store binary large object           --->   BLOB(1000)
+    4. INT     -->  integer(-2,147,483,648 to 2,147,483,647)                 --->   INT
+    5. BIGINT  -->  integer(-9,223,372,036,854,775,808 to 
+                        9,223,372,036,854,775,807)                           --->   BIGINT
+    6. TINYINT -->  integer(-128 to 127)                                     --->   TINYINT
+    7. BIT     -->  can store x-bit values, x can range from 1 to 64         --->   BIT
+    8. FLOAT   -->  decimal number - with precision to 23 digits             --->   FLOAT
+    9. DOUBLE  -->  decimal number - with 24 to 53 digits                    --->   DOUBLE
+    10.BOOLEAN -->  boolean values 0 or 1                                    --->   BOOLEAN
+    11.DATE    -->  date in format of YYYY-MM-DD ranging from
+                    1000-01-01 to 9999-12-31                                 --->   DATE
+    12.YEAR    -->  year in 4 digits format ranging from 1901 to 2155        --->   YEAR
+
+    Signed & Unsigned data Types:
+    1.TINYINT Unsigned  (0 to 255)            only positive numbers
+    2.TINYINT           (-128 to 127)         nagative and positive both numbers
 
 
 
