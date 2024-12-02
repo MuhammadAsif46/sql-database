@@ -53,6 +53,7 @@ Step 02: ---- Creating Our First Table ------
         age INT NOT NULL
     );
 
+
 Step 03: ---- Inserting Data ------
 
     1. INSERT INTO student VALUES(1, "ALI",23);
@@ -62,4 +63,21 @@ Step 03: ---- Inserting Data ------
     SELECT * FROM student;
 
 
+Step 04: ---- SQL DATATYPES (most use)------
 
+    -> They define the "type of value" that can be stored in a column.
+
+    DATATYPE           ->            DESCRIPTION                        ->          USAGE   
+
+    1. CHAR    -->  string(0-255), can store characters of fixed length      --->   CHAR(50)
+    2. VARCHAR -->  string(0-255), can store characters up to given length   --->   VARCHAR(50)
+    3. BLOB    -->  string(0-65535), can store binary large object           --->   BLOB(1000)
+
+
+
+
+    * Describe Data Types:
+    1. CHAR: 
+        -> Fixed-length data type; always reserves the specified length, padding with spaces if data is shorter.
+    2. VARCHAR: 
+        -> Variable-length data type; only uses space for actual data, no extra padding.
