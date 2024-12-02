@@ -1,0 +1,48 @@
+TYPES OF DATABASES:
+
+1. Relational Database.
+2. Non-relational Database(NoSQL).
+
+1. Relational Databases: (RDBMS -> Relational Database Management Systems):
+    ----> Data stored in tables.
+    for example: (most popular)
+    -> MySQL DATABASE.
+    -> Microsoft SQL Server.
+    -> ORACLE.
+    -> PostgreSQL DATABASE.
+
+2. Non-relational Databases:
+    ----> Data not stored in tables.
+    for example: (most popular)
+    -> mongoDB
+
+
+SQL DATABASE DOCS:
+
+1. WHAT IS SQL?
+    -> SQL Stands for :- Sturctured Query Language:
+    -> SQL is a programming language used to interact with relational databases.
+
+    it is used to perform CRUD operations:
+    - Create 
+    - Read
+    - Update
+    - Delete
+
+Step 01: ---- Creating Database ------
+
+    -> Our first SQL Query is :-
+    1. CREATE DATABASE db_name
+    2. Drop DATABASE db_name
+
+
+Step 02: ---- Creating Our First Table ------
+
+    1. USE db_name
+    2. CREATE TABLE table_name (
+        column_name1 datatype constrraint,
+        column_name2 datatype constrraint,
+        column_name3 datatype constrraint,
+    )
+
+
