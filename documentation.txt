@@ -133,3 +133,17 @@ SHOW TABLES;
 2. Select & View all columns:
 
 -> SELECT * FROM table_name;
+
+
+3. Insert: (follow column order to add row data)
+
+-> INSERT INTO table_name(column_name1, column_name2) 
+    VALUES 
+    (col1_v1,col2_v1);
+    (col1_v2,col2_v2);
+
+    example:
+-> INSERT INTO student(rollNo, name) 
+    VALUES 
+    (101,"abc"),
+    (102,"xyz");
