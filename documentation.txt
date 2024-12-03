@@ -48,8 +48,8 @@ Step 02: ---- Creating Our First Table ------
     For example :- 
 
     CREATE TABLE student(
-	    id INT PRIMARY KEY,
-        name VARCHAR(50),
+	    id INT PRIMARY KEY,     --> required Unique and not null
+        name VARCHAR(50),   
         age INT NOT NULL
     );
 
@@ -86,7 +86,7 @@ Step 04: ---- SQL DATATYPES (most popular)------
 
     Signed & Unsigned data Types:
     1.TINYINT Unsigned  (0 to 255)            only positive numbers
-    2.TINYINT           (-128 to 127)         nagative and positive both numbers
+    2.TINYINT Signed    (-128 to 127)         nagative and positive both numbers
 
 
 
@@ -96,3 +96,40 @@ Step 04: ---- SQL DATATYPES (most popular)------
         -> Fixed-length data type; always reserves the specified length, padding with spaces if data is shorter.
     2. VARCHAR: 
         -> Variable-length data type; only uses space for actual data, no extra padding.
+
+
+
+--------- Types of SQL Commands -----------
+
+1. DDL(Data Defination Language):       ->  create, alter, rename, truncate & drop
+2. DQL(Data Query Language):            ->  select
+3. DML(Data Manipulation Language):     ->  insert, update and delete
+4. DCL(Data Control Language):          ->  grant & revoke permission to users
+5. TCL(Transaction Control Language):   ->  start transaction, commit, and rollback
+
+
+--------- Database related Queries--------
+
+CREATE DATABASE db_name;
+CREATE DATABASE "IF NOT EXISTS" db_name;  
+
+DROP DATABASE db_name;
+DROP DATABASE "IF EXISTS" db_name;
+
+SHOW DATABASES;
+SHOW TABLES;
+
+
+--------- Tables related Queries--------
+
+1. Create (means):         --> table schema (design) 
+
+-> CREATE TABLE table_name(
+	    column_name1 datatype constrraint,
+        column_name2 datatype constrraint,
+    );
+
+
+2. Select & View all columns:
+
+-> SELECT * FROM table_name;
