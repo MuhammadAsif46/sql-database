@@ -163,3 +163,13 @@ SHOW TABLES;
       - A foreign key is a column (or set of columns) in a table that refers to the primary key  id
         There can be multiple FKs.
         FKs can have duplicate& null values.
+
+
+
+----------- CONSTRAINTS ----------
+
+    - SQL constraints are used to specify rules for data in a table.
+
+    -> Not Null:    --> columns cannot have a null value
+    -> Unique:      --> all values in column are different
+    -> Primary Key: --> makes a column unique & not null but used only for one
