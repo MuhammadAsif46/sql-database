@@ -18,5 +18,4 @@ SELECT * FROM student WHERE city = "Karachi";
 
 SELECT * FROM student WHERE marks > 80 AND city = "Karachi";
 
-
 -- WHERE Clause:
