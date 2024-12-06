@@ -176,3 +176,19 @@ SHOW TABLES;
     -> FOREIGN KEY: --> prevent actions that would destroy links between tables
     -> Default:     --> sets the default value of a column
     -> Check:       --> it can limits the values allowed in a column
+
+
+------------ SELECT IN DETAILS ----------------
+
+    - used to select any data from the database
+
+    -> Basic Syntax:
+        - SELECT col1, col2 FROM table_name;
+
+    to select all:
+        - SELECT * FROM table_name;
+
+    -> Duplicate values ignore:
+        - SELECT DISTINCT city FROM student;
+
+        
