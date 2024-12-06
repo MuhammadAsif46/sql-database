@@ -191,10 +191,15 @@ SHOW TABLES;
     -> Duplicate values ignore:
         - SELECT DISTINCT city FROM student;
 
-    -> WHERE column:
+    -> WHERE clause:
         - to define some conditions
-        - SELECT col1, col2 FROM table_name
-          WHERE conditions;
+        - SELECT col1, col2 FROM table_name WHERE conditions;
 
+    -> WHERE clause:
+        - using operator in WHERE
+        -> Arithmatic Operators:    -->     +, -, *, / and %
+        -> Comparison Operators:    -->     =, !=, >, >=, <, and <=
+        -> Logical Operations:      -->     AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
+        -> Bitwise Operations:      -->     & and |
 
 
