@@ -173,3 +173,6 @@ SHOW TABLES;
     -> Not Null:    --> columns cannot have a null value
     -> Unique:      --> all values in column are different
     -> Primary Key: --> makes a column unique & not null but used only for one
+    -> FOREIGN KEY: --> prevent actions that would destroy links between tables
+    -> Default:     --> sets the default value of a column
+    -> Check:       --> it can limits the values allowed in a column
