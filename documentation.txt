@@ -191,4 +191,10 @@ SHOW TABLES;
     -> Duplicate values ignore:
         - SELECT DISTINCT city FROM student;
 
-        
+    -> WHERE column:
+        - to define some conditions
+        - SELECT col1, col2 FROM table_name
+          WHERE conditions;
+
+
+
