@@ -202,4 +202,8 @@ SHOW TABLES;
         -> Logical Operations:      -->     AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
         -> Bitwise Operations:      -->     & and |
 
-
+    -> AND operator:        --> to check for both conditions to be true 
+    -> OR operator:         --> to check for one of the conditions to be true 
+    -> BETWEEN operator:    --> selects for a given range
+    -> IN operator:         --> matches any value in the list
+    -> NOT operator:        --> to negate the given condition
