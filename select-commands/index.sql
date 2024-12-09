@@ -50,5 +50,15 @@ SELECT * FROM student WHERE city IN ("Karachi", "Lahore", "Islamabad");
 
 SELECT * FROM student WHERE city NOT IN ("Karachi", "Lahore", "Islamabad");
 
+-- LIMIT Clause:
+
+SELECT * FROM student LIMIT 5;
+SELECT * FROM student WHERE marks > 70 LIMIT 3;
+
 -- ORDER BY Clause:
+
+SELECT * FROM student ORDER BY marks DESC;
+SELECT * FROM student ORDER BY marks DESC LIMIT 3;
+SELECT * FROM student ORDER BY city ASC;
+
 

@@ -207,3 +207,17 @@ SHOW TABLES;
     -> BETWEEN operator:    --> selects for a given range
     -> IN operator:         --> matches any value in the list
     -> NOT operator:        --> to negate the given condition
+
+    -> Limit clause:
+        - sets an upper limit on number of (tuples) rows to be returned
+        
+        Command:
+        - SELECT col1, col2 FROM table_name LIMIT number;
+
+    -> Order by clause:
+        - to sort in ascending (ASC) or descending order (DESC)
+        
+        Commands:
+        - SELECT col1, col2 FROM table_name ORDER BY col_name(s) ASC;
+        - SELECT col1, col2 FROM table_name ORDER BY col_name(s) DESC;
+
