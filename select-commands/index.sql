@@ -62,3 +62,9 @@ SELECT * FROM student ORDER BY marks DESC LIMIT 3;
 SELECT * FROM student ORDER BY city ASC;
 
 
+-- GROUP BY Clause:
+
+SELECT city, COUNT(name) FROM student GROUP BY city;
+SELECT city, COUNT(name) AS total_students FROM student GROUP BY city;
+
+

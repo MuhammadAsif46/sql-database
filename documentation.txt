@@ -221,6 +221,15 @@ SHOW TABLES;
         - SELECT col1, col2 FROM table_name ORDER BY col_name(s) ASC;
         - SELECT col1, col2 FROM table_name ORDER BY col_name(s) DESC;
 
+    -> Group by clause:
+        - Groups rows that have the same values into summary rows.
+        - It collect data from multiple records and groups the result by one or more column.
+
+        *Generally we use group by with some aggregation function.
+        -> count number of students in each city
+        Command:
+        SELECT city, COUNT(name) FROM students GROUP BY city;
+
 
 -------- Aggregate Functions ------------
 
@@ -230,3 +239,4 @@ SHOW TABLES;
         - MIN()
         - SUM()
         - AVG()
+
