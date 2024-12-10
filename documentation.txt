@@ -252,3 +252,15 @@ SHOW TABLES;
     GROUP BY column(s)
     HAVING condition
     ORDER BY column(s) ASC;
+
+
+-------- Table Related Queries --------------
+
+        - SET SQL_SAFE_UPDATES = 0; // safe mode on value 0
+        - SET SQL_SAFE_UPDATES = 1; // safe mode of value 1
+
+        - Update (to update existing rows)
+        command:
+        UPDATE table_name
+        SET col1 = val1, col2 = val2
+        WHERE condition;
