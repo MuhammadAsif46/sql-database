@@ -68,3 +68,19 @@ SELECT city, COUNT(name) FROM student GROUP BY city;
 SELECT city, COUNT(name) AS total_students FROM student GROUP BY city;
 
 
+-- Having Clause
+
+SELECT count(name), city
+FROM student
+GROUP BY city
+HAVING max(marks) > 90;
+
+
+-- General Order:
+
+SELECT city
+FROM student
+WHERE grade = "A"
+GROUP BY city
+HAVING max(marks) > 80;
+ORDER BY city DESC;

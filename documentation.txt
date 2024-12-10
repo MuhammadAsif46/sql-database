@@ -230,6 +230,10 @@ SHOW TABLES;
         Command:
         SELECT city, COUNT(name) FROM students GROUP BY city;
 
+    -> Having Clause
+        - Similar to Where i.e. applies some condition on rows.
+        - Used when we want to apply any condition after grouping.
+
 
 -------- Aggregate Functions ------------
 
@@ -240,3 +244,11 @@ SHOW TABLES;
         - SUM()
         - AVG()
 
+-------- General Order --------------
+
+    SELECT column(s)
+    FROM table_name
+    WHERE condition
+    GROUP BY column(s)
+    HAVING condition
+    ORDER BY column(s) ASC;
