@@ -30,6 +30,8 @@ SELECT city, count(name) FROM student GROUP BY city ;
 SET SQL_SAFE_UPDATES = 0;   -- 0 value is safe mode on
 -- SET SQL_SAFE_UPDATES = 1; -- 1 value is safe mode of
 
+--Update Query:
+
 UPDATE student
 SET grade = "0"
 WHERE grade = "A";
@@ -39,3 +41,9 @@ SELECT * FROM student;
 UPDATE student 
 SET marks = 84 
 WHERE rollNo = 101;
+
+
+--Delete Query:
+
+DELETE FROM student
+WHERE marks < 33;

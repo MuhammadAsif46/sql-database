@@ -264,3 +264,7 @@ SHOW TABLES;
         UPDATE table_name
         SET col1 = val1, col2 = val2
         WHERE condition;
+
+        - Delete (to delete existing rows)
+        DELETE FROM table_name
+        WHERE condition;
