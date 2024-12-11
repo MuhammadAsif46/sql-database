@@ -285,3 +285,27 @@ SHOW TABLES;
         - Delete (to delete existing rows)
         DELETE FROM table_name
         WHERE condition;
+
+
+        * Alter (to change the schema)
+            - ADD Column
+                ALTER TABLE table_name
+                ADD COLUMN column_name datatype constraint;
+
+            - DROP Column
+                ALTER TABLE table_name
+                DROP COLUMN column_name;
+
+            - RENAME Table
+                ALTER TABLE table_name
+                RENAME TO new_table_name;
+
+            - CHANGE Column (rename)
+                ALTER TABLE table_name
+                CHANGE COLUMN old_name new_name new_datatype new_constraint;
+
+            - MODIFY Column (modify datatype/ constraint)
+                ALTER TABLE table_name
+                MODIFY col_name new_datatype new_constraint
+
+            
