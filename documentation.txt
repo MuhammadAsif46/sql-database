@@ -308,4 +308,7 @@ SHOW TABLES;
                 ALTER TABLE table_name
                 MODIFY col_name new_datatype new_constraint
 
-            
+        * Trancate:-
+            - trancate (to delete table's data)
+            command:
+            TRANCATE TABLE table_name;  
