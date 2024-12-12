@@ -54,3 +54,65 @@ UNION
 SELECT * FROM student as a
 RIGHT JOIN course as b
 ON a.id : = b.id;
+
+-- Left Exclusive Join
+SELECT *
+FROM student as a
+LEFT JOIN course as b
+ON a.id = b.id
+WHERE b.id IS NULL;
+
+
+-- Right Exclusive Join
+SELECT *
+FROM student as a
+RIGHT JOIN course as b
+ON a.id = b.id
+WHERE a.id IS NULL;
+
+-- FULL Exclusive Join
+SELECT *
+FROM student as a
+LEFT JOIN course as b
+ON a.id = b.id
+WHERE b.id IS NULL
+UNION
+SELECT *
+FROM student as a
+RIGHT JOIN course as b
+ON a.id = b.id
+WHERE a.id IS NULL;
+
+
+--SELF JOIN:
+CREATE TABLE employee(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+manager_id INT
+);
+
+INSERT INTO employee 
+(id,name,manager_id) 
+values
+(101,"adam",103),
+(102,"bob",104),
+(103,"casey",NULL),
+(104,"donald",103);
+
+SELECT * FROM employee;
+
+SELECT * 
+FROM employee as a
+JOIN employee as b
+ON a.id = b.manager_id; 
+
+SELECT * a.name, b.name
+FROM employee as a
+JOIN employee as b
+ON a.id = b.manager_id; 
+
+-- add manager name:
+SELECT a.name as manager_name, b.name
+FROM employee as a
+JOIN employee as b
+ON a.id = b.manager_id; 
