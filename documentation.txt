@@ -373,3 +373,13 @@ SHOW TABLES;
         SELECT column(s) FROM tableA
         UNION
         SELECT column(s) FROM tableB
+
+
+---------- SQL SUB QUERIES ---------
+
+    -> A Subquery or Inner query or a nested query is a query within SQL query.
+    It involves 2 select statements.
+
+    syntax:
+    SELECT column(s) FROM table_name 
+    WHERE col_name operator (subquery);
