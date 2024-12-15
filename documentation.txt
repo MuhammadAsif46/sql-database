@@ -359,3 +359,17 @@ SHOW TABLES;
                 SELECT * FROM student as a
                 RIGHT JOIN course as b
                 ON a.id : = b.id;
+
+
+------- UNION ---------
+
+    -> It is used to combine the result-set of two or more SELECT statements Gives UNIQUE records.
+    -> To Use It:
+        - every SELECT should have same no.of columns
+        - columns must have similar data types.
+        - columns in every select should be in same order.
+
+        syntax:
+        SELECT column(s) FROM tableA
+        UNION
+        SELECT column(s) FROM tableB
